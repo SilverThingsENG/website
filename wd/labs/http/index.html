@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>Https & Security</title>
+    <style>
+        body{
+            background-color: purple;
+        }
+        h4{
+            color: orange;
+        }
+        p{
+            color: orange;
+        }
+    </style>
+</head>
+
+
+<body>
+<h4>What is the Hypertext Transfer Protocol (HTTP)</h4>
+<p>An application-layer protocol for transmitting hypermedia documents, such as HTML.<br>Designed for communication between web browsers and web servers.</p>
+<h4>Why is HTTP called a stateless protocol?</h4>
+<p>There is no link between two requests being successively carried out on the same connection.</p>
+<h4>Describe the three phases of establishing a session using client-server protocols such as HTTP</h4>
+<p>Phase 1. The client establishes a TCP connection.<br>Phase 2. The client sends its request e.g. Get, Fetch, Post, etc<br>Phase 3. The server processed the request, sending back its answer and providing a status code and the data required.</p>
+<h4>Describe the parameters on a get and post request.</h4>
+<p>Get Request: Requests using 'Get' should only retrieve data.<br> Post Request: Post would only send data to a server, generally in the form of an HTML form.</p>
+<h4>What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</h4>
+<p>Status codes indicated if a request was successful or not and why. <br> 200 means that a request was successful.<br>400 means that the pages that was requested by the client wasn't found.</p>
+<h4>What are HTTP cookies? Give an example.</h4>
+<p>HTTP cookies are small pieces of data that a server sends to the user's browser. Typically used to see if two requests came from the same browser.<br>Examples:<br>Session Management - Keeping a user logged in, remembering shopping carts etc.
+<br>Personalisation: User preferences, themes, and other user defined settings.<br>
+Tracking: Recording and analysing a user's behaviour.</p>
+<h4>Why are cookies a security issue?</h4>
+<p>They contain personal information that can be easily hijacked and the information that is stored within
+can be taken and used.<br>This will allow the interceptor to take on a session of a user that is logged into a specific site and pretend to be the victim.</p>
+<h4>Describe session hijacking and XSS</h4>
+<p>Cookies are used to identify a user and their session that they may be logged into a website.<br>
+Stealing a cookie will allow the attacker to hijack the user's authenticated session.<br>
+Ways to retrieve a cookie is through 'Social Engineering', exploiting a person's vulnerability and lack of knowledge, or exploiting a XSS vulnerability, allows an attacker to inject malicious client-side code to retrieve a cookie.</p>
+<h4>Describe Cross-site request forgery(CSRF)</h4>
+<p>An attack the impersonates a trusted user and sends a website unwanted commands. THis can be done by including malicious parameters in a URL behind a link that purports to go somewhere else.</p>
+<h4>What are Cross-site HTTP requests (CORS) and what requests use CORS?</h4>
+<p>A mechanism that uses additional HTTP headers to tell browsers to give a web application running at one origin, access to selected resources at a different origin.<br>
+Requests that can use CORS: Web Fonts, Images/video frames drawn from canvas, CSS Shapes from Images.</p>
+</body>
+</html>

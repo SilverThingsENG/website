@@ -1,0 +1,30 @@
+body{
+	font-size: 20px; 
+	font-family: "Open Sans", sans-serif; 
+	width: auto;
+	margin: 0 auto;
+	padding: 0 20px 20px 20px;
+	position: auto;
+	max-width: 800px;
+}
+.sender {
+	text-align: right;
+	padding-top: 2%;
+}
+
+h1 {
+	font-size: 15px;
+}
+
+h2 {
+	font-size: 13px;
+}
+
+p,ul,ol,dl,address {
+	font-size: 11px;
+}
+
+p, li, dd, dt, address {
+	line-height: 1.5;
+}
+
